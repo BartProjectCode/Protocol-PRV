@@ -14,7 +14,7 @@ public class AggroTrigger : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log(other.gameObject.name);
+        //Debug.Log(other.gameObject.name);
         if (other.gameObject.CompareTag(_strength))
         {
             if (!parent.GetComponent<EntityMovement>().attackMode)
