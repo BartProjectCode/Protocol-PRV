@@ -85,7 +85,7 @@ public class EntityMovement : MonoBehaviour
             fleeMode = false;
             _t += Time.deltaTime;
 
-            if (_t <= timerAttack)
+            if (_t <= timerAttack && target != null)
             {
                 //Focussing on the enemy and chasing it during a limited period.
                 nextPos = target.transform.position;
@@ -106,7 +106,7 @@ public class EntityMovement : MonoBehaviour
         {
             _t += Time.deltaTime;
 
-            if (_t <= timerFlee)
+            if (_t <= timerFlee && predator != null)
             {
                 //Trying to go to the opposite direction relatively to the potential aggressor, without going OOB.
                 transform.forward = (transform.position - predator.transform.position).normalized;
@@ -125,6 +125,10 @@ public class EntityMovement : MonoBehaviour
                 NewDestination();
             }
         }
+        // else if (fleeMode && !attackMode && predator.transform.position == null)
+        // {
+        //     fleeMode = false;
+        // }
         
         //Move the object to its destination with a speed previously defined.
         //transform.Translate((nextPos - transform.position).normalized * (Time.deltaTime * _effectiveSpeed), Space.World);

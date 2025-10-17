@@ -19,18 +19,29 @@ public class SeasonsCycle : MonoBehaviour
     {
         timer -= Time.deltaTime;
 
-        if (timer <= 0)
+        // if (seasonCount > 3)
+        // {
+        //     seasonCount = 0;
+        // }
+
+        if (timer <= 0 && seasonCount < 3)
         {
             timer = maxTimer;
             seasonCount++;
             currentSeason = seasons[seasonCount];
-            Debug.Log(currentSeason);
+            // Debug.Log(currentSeason);
+        }
+        else if (timer <= 0 && seasonCount >= 3)
+        {
+            timer = maxTimer;
+            seasonCount = 0;
+            currentSeason = seasons[seasonCount];
+            // Debug.Log(currentSeason);
         }
 
-        if (seasonCount >= 3)
-        {
-            seasonCount = 0;
-        }
+        
         // Debug.Log(timer);
+        // Debug.Log(seasonCount);
+        
     }
 }

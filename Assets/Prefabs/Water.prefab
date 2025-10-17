@@ -17,13 +17,14 @@ GameObject:
   - component: {fileID: 2535369024458077576}
   - component: {fileID: 6802257774908934273}
   - component: {fileID: 5712879630397391780}
+  - component: {fileID: 5460461380490263817}
   m_Layer: 0
   m_Name: Water
   m_TagString: Water
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &3055929440570821006
 Transform:
   m_ObjectHideFlags: 0
@@ -154,19 +155,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3077c60f66ce415ebf6feb58e629c377, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ground: {fileID: 0}
+  nextPos: {x: 0, y: 0, z: 0}
   speed: 5
   tolerance: 0.5
   target: {fileID: 0}
+  predator: {fileID: 0}
   attackMode: 0
   fleeMode: 1
-  fatigue: 0
+  groundGO: {fileID: 0}
   timerAttack: 4
   timerFlee: 4
-  timerFatigue: 2
   speedModifierAttack: 1.5
   speedModifierFleeing: 1.5
-  speedModifierFatigue: 1
 --- !u!114 &2535369024458077576
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -206,6 +206,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: {fileID: 6802257774908934273}
+--- !u!114 &5460461380490263817
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6288050733352752263}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fde257f343aa084a953b0f8bfbdaaf1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameManager: {fileID: 0}
+  seasonsCycle: {fileID: 0}
+  buffSeason: 
+  ownPrefab: {fileID: 0}
+  radius: 5
+  offspringNumber: 3
+  maxOffspringNumber: 3
 --- !u!1 &7181631395805303468
 GameObject:
   m_ObjectHideFlags: 0

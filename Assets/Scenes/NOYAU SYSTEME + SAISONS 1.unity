@@ -238,10 +238,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Water
       objectReference: {fileID: 0}
-    - target: {fileID: 6963403549727421707, guid: 739fcd48f54fa2f4898e11fa2b738ae2, type: 3}
-      propertyPath: ground
-      value: 
-      objectReference: {fileID: 1048129599}
+    - target: {fileID: 6288050733352752263, guid: 739fcd48f54fa2f4898e11fa2b738ae2, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -505,6 +505,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Water (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6288050733352752263, guid: 739fcd48f54fa2f4898e11fa2b738ae2, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -614,6 +618,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wind (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 215307918437436877, guid: d81806b6e28fd5d4cb155985608094b8, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4410414982953211385, guid: d81806b6e28fd5d4cb155985608094b8, type: 3}
       propertyPath: m_LocalPosition.x
       value: 13.346321
@@ -670,6 +678,10 @@ PrefabInstance:
     - target: {fileID: 289283001483782107, guid: 829b9858431f7154aa24a5f7fd5e60b9, type: 3}
       propertyPath: m_Name
       value: Fire (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 289283001483782107, guid: 829b9858431f7154aa24a5f7fd5e60b9, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3118013589374434330, guid: 829b9858431f7154aa24a5f7fd5e60b9, type: 3}
       propertyPath: m_LocalPosition.x
@@ -768,6 +780,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Earth (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7004126140719036214, guid: c3f7ac11c0cfac14d84342cde9629944, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -784,6 +800,10 @@ PrefabInstance:
     - target: {fileID: 215307918437436877, guid: d81806b6e28fd5d4cb155985608094b8, type: 3}
       propertyPath: m_Name
       value: Wind
+      objectReference: {fileID: 0}
+    - target: {fileID: 215307918437436877, guid: d81806b6e28fd5d4cb155985608094b8, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4410414982953211385, guid: d81806b6e28fd5d4cb155985608094b8, type: 3}
       propertyPath: m_LocalPosition.x
@@ -825,10 +845,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4581340467590486949, guid: d81806b6e28fd5d4cb155985608094b8, type: 3}
-      propertyPath: ground
-      value: 
-      objectReference: {fileID: 1048129599}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -842,10 +858,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4759260302819790038, guid: c3f7ac11c0cfac14d84342cde9629944, type: 3}
-      propertyPath: ground
-      value: 
-      objectReference: {fileID: 1048129599}
     - target: {fileID: 6352177862432161183, guid: c3f7ac11c0cfac14d84342cde9629944, type: 3}
       propertyPath: m_LocalPosition.x
       value: -8.365451
@@ -890,6 +902,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Earth
       objectReference: {fileID: 0}
+    - target: {fileID: 7004126140719036214, guid: c3f7ac11c0cfac14d84342cde9629944, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -906,6 +922,10 @@ PrefabInstance:
     - target: {fileID: 289283001483782107, guid: 829b9858431f7154aa24a5f7fd5e60b9, type: 3}
       propertyPath: m_Name
       value: Fire
+      objectReference: {fileID: 0}
+    - target: {fileID: 289283001483782107, guid: 829b9858431f7154aa24a5f7fd5e60b9, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3118013589374434330, guid: 829b9858431f7154aa24a5f7fd5e60b9, type: 3}
       propertyPath: m_LocalPosition.x
@@ -947,10 +967,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4067200345438823264, guid: 829b9858431f7154aa24a5f7fd5e60b9, type: 3}
-      propertyPath: ground
-      value: 
-      objectReference: {fileID: 1048129599}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
