@@ -8,6 +8,7 @@ public class SeasonsCycle : MonoBehaviour
     public int seasonCount;
     public float maxTimer = 100f;
     public float timer = 0f;
+    public int maxOffspring = 1;
 
     private void Start()
     {

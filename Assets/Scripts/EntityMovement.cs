@@ -131,7 +131,7 @@ public class EntityMovement : MonoBehaviour
         // }
         
         //Move the object to its destination with a speed previously defined.
-        //transform.Translate((nextPos - transform.position).normalized * (Time.deltaTime * _effectiveSpeed), Space.World);
+        // transform.Translate((nextPos - transform.position).normalized * (Time.deltaTime * _effectiveSpeed), Space.World);
         transform.position = Vector3.MoveTowards(transform.position, nextPos, speed * Time.deltaTime);
     }
 

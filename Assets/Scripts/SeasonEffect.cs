@@ -10,6 +10,7 @@ public class SeasonEffect : MonoBehaviour
     public float radius = 5f;
     public int offspringNumber = 3;
     public int maxOffspringNumber = 3;
+    public int test;
 
     private void Start()
     {
@@ -18,6 +19,8 @@ public class SeasonEffect : MonoBehaviour
         ownPrefab = gameObject;
         SetBuffSeason();
         offspringNumber = 0;
+        maxOffspringNumber = seasonsCycle.maxOffspring;
+        // test = SeasonsCycle.maxOffspring;
     }
 
     private void Update()
