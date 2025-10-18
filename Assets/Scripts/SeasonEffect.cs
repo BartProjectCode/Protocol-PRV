@@ -8,8 +8,8 @@ public class SeasonEffect : MonoBehaviour
     public string buffSeason;
     public GameObject ownPrefab;
     public float radius = 5f;
-    public float offspringNumber = 3f;
-    public float maxOffspringNumber = 3f;
+    public int offspringNumber = 3;
+    public int maxOffspringNumber = 3;
 
     private void Start()
     {
