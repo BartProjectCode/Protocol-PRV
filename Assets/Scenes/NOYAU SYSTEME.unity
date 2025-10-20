@@ -129,6 +129,7 @@ GameObject:
   m_Component:
   - component: {fileID: 105087964}
   - component: {fileID: 105087963}
+  - component: {fileID: 105087965}
   m_Layer: 0
   m_Name: GM
   m_TagString: Untagged
@@ -164,6 +165,22 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &105087965
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 105087962}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad00ed5dc44240b4ea5f82fa01a22b9f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 8851311483806778609, guid: 20d8db53cf820684aa3f475329ae8f45, type: 3}
+  spawnInterval: 3
+  zoneCenter: {x: 0, y: 0, z: 0}
+  zoneSize: {x: 40, y: 0, z: 40}
 --- !u!1 &298250779 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6288050733352752263, guid: 739fcd48f54fa2f4898e11fa2b738ae2, type: 3}
@@ -181,8 +198,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 738342df1e36df34bb7d2539c4d8195d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FoodSpeed: 7.64
-  foodcube: {fileID: 1000020350}
+  FoodSpeed: 2
+  SpeedDuration: 5
 --- !u!1001 &508812190
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -401,11 +418,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
---- !u!1 &1000020350 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8851311483806778609, guid: 20d8db53cf820684aa3f475329ae8f45, type: 3}
-  m_PrefabInstance: {fileID: 508812190}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1048129595
 GameObject:
   m_ObjectHideFlags: 0
@@ -618,6 +630,14 @@ PrefabInstance:
     - target: {fileID: 215307918437436877, guid: d81806b6e28fd5d4cb155985608094b8, type: 3}
       propertyPath: m_Name
       value: Wind
+      objectReference: {fileID: 0}
+    - target: {fileID: 916205440479929420, guid: d81806b6e28fd5d4cb155985608094b8, type: 3}
+      propertyPath: FoodSpeed
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 916205440479929420, guid: d81806b6e28fd5d4cb155985608094b8, type: 3}
+      propertyPath: SpeedDuration
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4410414982953211385, guid: d81806b6e28fd5d4cb155985608094b8, type: 3}
       propertyPath: m_LocalPosition.x

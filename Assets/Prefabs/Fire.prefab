@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 9101317650128362948}
   - component: {fileID: 3818371944368103433}
   - component: {fileID: 4767440180216899327}
+  - component: {fileID: 2332490359630763706}
   m_Layer: 0
   m_Name: Fire
   m_TagString: Fire
@@ -154,19 +155,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3077c60f66ce415ebf6feb58e629c377, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ground: {fileID: 0}
+  nextPos: {x: 0, y: 0, z: 0}
   speed: 5
   tolerance: 0.5
   target: {fileID: 0}
+  predator: {fileID: 0}
   attackMode: 0
   fleeMode: 0
-  fatigue: 0
+  groundGO: {fileID: 0}
   timerAttack: 4
   timerFlee: 4
-  timerFatigue: 2
   speedModifierAttack: 1.5
   speedModifierFleeing: 1.5
-  speedModifierFatigue: 1
 --- !u!114 &9101317650128362948
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -206,6 +206,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: {fileID: 3818371944368103433}
+--- !u!114 &2332490359630763706
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 289283001483782107}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 738342df1e36df34bb7d2539c4d8195d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FoodSpeed: 3
+  SpeedDuration: 5
 --- !u!1 &1761237144080149563
 GameObject:
   m_ObjectHideFlags: 0
