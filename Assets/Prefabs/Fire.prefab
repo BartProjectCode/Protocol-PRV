@@ -18,6 +18,7 @@ GameObject:
   - component: {fileID: 3818371944368103433}
   - component: {fileID: 4767440180216899327}
   - component: {fileID: 4888225011459080059}
+  - component: {fileID: 793136658469260904}
   m_Layer: 0
   m_Name: Fire
   m_TagString: Fire
@@ -225,6 +226,21 @@ MonoBehaviour:
   radius: 5
   offspringNumber: 3
   maxOffspringNumber: 3
+  test: 0
+--- !u!114 &793136658469260904
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 289283001483782107}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6070e34caf2f68445803ad3527719296, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FoodSpeed: 1
+  SpeedDuration: 3
 --- !u!1 &1761237144080149563
 GameObject:
   m_ObjectHideFlags: 0

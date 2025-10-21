@@ -140,6 +140,7 @@ GameObject:
   - component: {fileID: 5301914373063379696}
   - component: {fileID: 9167860744311194966}
   - component: {fileID: 4047132133896962840}
+  - component: {fileID: 1119476814633534175}
   m_Layer: 0
   m_Name: Earth
   m_TagString: Earth
@@ -347,3 +348,18 @@ MonoBehaviour:
   radius: 5
   offspringNumber: 3
   maxOffspringNumber: 3
+  test: 0
+--- !u!114 &1119476814633534175
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7004126140719036214}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6070e34caf2f68445803ad3527719296, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FoodSpeed: 1
+  SpeedDuration: 3

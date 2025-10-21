@@ -10,7 +10,7 @@ public class EntityMovement : MonoBehaviour
     private Transform _ground;
     
     //Random Movement variables
-    [SerializeField] private float speed;
+    public float speed;
     [SerializeField] private float tolerance = 0.5f;
     
     //Attack Mode et Flee Mode variables
